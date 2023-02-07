@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 200vh;
+}
+.nav{
+    width: 89%;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0px 60px;
+    color: white;
+    position: fixed;
+    z-index: 999;
+}
+
+
+.clear{
+    clear: both;
+}
+
+.nav img{
+    width: 10%;
+    height: 55px;
+    margin: 0px 10px;
+}
+
+.nav .nav-list{
+    float: right;
+    width: 35%;
+    margin: 15px 10px 5px 0px;
+}
+
+.nav .nav-list ul li{
+    list-style: none;
+    float: right;
+    padding: 0px 20px 0px 25px ;
+}
+
+
+.content{
+    width: 100%;
+    height: 95vh;
+    position: relative;
+}
+
+.content .content-img {
+  width: 100%;
+  height: 100%;
+  background-image: url("image/back4.jfif");
+  background-size: cover;
+}
+
+.overlay{
+    text-align: center;
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    top: 400px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 2s;
+}
+
+.caption {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 700px;
+    opacity: 0;
+    transition: 2s;
+    text-align: center;
+    color: white;
+}
+
+.content:hover .overlay{
+   top: 0;
+   opacity: 1;
+}
+
+.content:hover .caption{
+    bottom: 0;
+    top:350px;
+    opacity: 1;
+ }
+
+ .section{
+    width: 100%;
+    color: white;
+ }
+
+ .section .card{
+    width: 23%;
+    float: left;
+    position: relative;
+    margin: 15px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card .card-img{
+    width: 100%;
+}
+
+.card .card-img img{
+    width: 100%;
+}
+
+.overlay2{
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: 2s;
+    opacity: 0;
+}
+
+.overlay2 .card-caption{
+    position: absolute;
+    top: 200px;
+    right: 0;
+    left: 0;
+}
+
+.card:hover .overlay2{
+    transform: rotate(360deg);
+    opacity: 1;
+}
